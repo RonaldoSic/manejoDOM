@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Manejo del Dom</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Ronaldo Sic</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#title">Obtener Elementos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titleEvent">Evetos del Mouse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#titleKey">Eventos del Teclado</a>
+            </li>
+            <li class="nav-item">
+                <a 
+                class="nav-link" 
+                href="#">
+                Crear nuevos Elementos</a>
+              </li>
+          </ul>          
+        </div>
+    </nav>
+    
+
+
+    <div class="card text-center">
+        <div class="card-header">
+          Manejo del Dom con JS
+        </div>
+        <div class="card-body">
+          <h5 id="title" class="card-title">Clase Codigo Facilito JS y DOM</h5>
+          <p id="description" class="card-text">
+              Curso de JavaScrip para mandejar el Dom con las cualidades más rápidas y efectivas.
+              Manejo de las propiedades de obtener elementos por Id, clase entre otos.
+          </p>         
+        </div>
+        <div class="card-footer text-muted">
+          17 de Marzo de 2020
+        </div>
+      </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12">
+        <div class="card">
+            <div class="card-header">
+                Lenguajes de Programación que conozco
+              </div>
+        <ul class="list-group">
+        <li id="firstCourse"
+        class="list-group-item">
+            C++
+        </li>
+        <li class="list-group-item">
+            Java
+        </li>
+        <li class="list-group-item">
+            HTML
+        </li>
+        <li class="list-group-item">
+            Css
+        </li>
+        <li class="list-group-item">
+            PHP
+        </li>
+        <li class="list-group-item">
+            JavaScrip
+        </li>
+        <li class="list-group-item">
+            Android
+        </li>
+        <li class="list-group-item">
+            NodeJS
+        </li>
+        <li id="lastCourse"
+        class="list-group-item">
+            Reactjs
+        </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+            <div 
+            class="row justify-content-md-center">
+                
+                <div class="col col-lg-4">
+                    <h2 id="titleEvent">Eventos del Mouse</h2>
+                </div>    
+                
+                </div>        
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-12">
+                    <h4>BTN que saluda</h4>
+                    <button 
+                    id="btnSaludar"
+                    type="button" 
+                    class="btn btn-primary btn-lg btn-block">
+                    Quieres que te Salude?
+                    </button>
+                </div>                
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col col-sm-12">
+                    <div class="card">
+                        <div class="card-title">
+                            <h3 id="titleCard">Titulo de la tarjeta</h3>
+                        </div>
+                        <div class="card-body">
+                            <p id="bodyCard">Cotenido de la tarjeta</p>
+                        </div>
+                        <button class="card-footer">
+                            <button id="btnHideShow" class="btn btn-primary">
+                                Ocultar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>    
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 id="titleKey">Eventos del Teclado</h3>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <h2 class="display-2" id="titleJumbo">Titulo</h2>
+            <p class="description_container"
+             id="descriptionJumbo">
+                Breve descripcion.
+            </p>
+            
+            <form id="create-course">
+                <div class="form-group">
+                    <input 
+                        class="form-control" 
+                        type="text" 
+                        placeholder="Titulo"
+                        id="titleNewCouse">
+                    </div>
+                    <div class="form-group">
+                        <input 
+                        type="text" 
+                        class="form-control"
+                        id="descriptionNewCourse" 
+                        placeholder="Breve descripcion">   
+                        <small id="descipcionHelp"
+                        class="form-text text-muted">Escribre una breve descripcion</small>               
+                    </div>
+                    <div class="form-group">
+                        <label for="checkbox">
+                            <input 
+                            type="checkbox" 
+                            name="" 
+                            id="checkbox">
+                            Premium
+                        </label>
+                    </div>
+                    <button 
+                    type="submit" 
+                    id="create-course" 
+                    class="btn btn-info">
+                    Crear Curos
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 id="titleDomUpdate">
+            Modificar el Dom
+        </h2>
+        <div class="jumbotron">
+            <h3 id="titleDom1">
+                Creacion de Componentes
+            </h3>
+            <div class="row">
+                <!-- <div class="col-sm-6    col-md-4">                
+                    <div class="thumbnail">
+                        <div class="caption">
+                            <h3 id="title_card">
+                                Titulo
+                            </h3>
+                            <p id="description_card">Descripcion</p>
+                                <p>
+                                    <a 
+                                    href="#" 
+                                    class="btn btn-danger"
+                                    >
+                                    Accion
+                                    </a>
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- LLAMA DE MIS SCRIPTS-->
+<!-- OBTENER LOS ELEMENTOS DEL DOM -->
+<!-- <script 
+   type="text/javascript" 
+   src="./JavaScript/getElements.js">
+</script> -->
+<!-- EVENTOS -->
+<script src="./JavaScript/events.js"></script>
+
+
+
+       <!--Bootstrap-->
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
